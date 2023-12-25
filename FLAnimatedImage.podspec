@@ -20,5 +20,6 @@ Pod::Spec.new do |spec|
   spec.source           = { :git => "https://github.com/Flipboard/FLAnimatedImage.git", :tag => "1.0.17" }
   spec.source_files     = "FLAnimatedImage/**/*.{h,m}"
   spec.frameworks       = "QuartzCore", "ImageIO", "CoreGraphics"
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   spec.requires_arc     = true
 end
